@@ -26,7 +26,7 @@ const IngredientsSearch = ( {recipeList, setRecipeList} ) => {
     };
 
     const handleSuggestion = (() => {
-        const url = `http://fridgenerate-app.herokuapp.com/api/ingredients/`;
+        const url = `https://fridgenerate-app.herokuapp.com/api/ingredients/`;
         axios.get(url)
         .then((response) => {
             setSuggestions(response.data);
@@ -42,7 +42,7 @@ const IngredientsSearch = ( {recipeList, setRecipeList} ) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const url = "http://fridgenerate-app.herokuapp.com/recipes/";
+        const url = "https://fridgenerate-app.herokuapp.com/recipes/";
         console.log("Tags:", tags);
 
         axios.post(url, {

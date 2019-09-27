@@ -34,7 +34,7 @@ const Results = ( {recipe, recipeList, setCurrentRecipe} ) => {
                     const handleClick = (e) => {
                         e.preventDefault();
 
-                        const url = "http://fridgenerate-app.herokuapp.com/recipe_details/";
+                        const url = "https://fridgenerate-app.herokuapp.com/recipe_details/";
 
                         axios.post(url, {
                             'data': {

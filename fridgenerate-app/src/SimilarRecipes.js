@@ -8,7 +8,7 @@ const SimilarRecipes = ( {currentRecipe, setCurrentRecipe} ) => {
     const similarRecipesClick = (e) => {
         e.preventDefault();
 
-        const url = 'http://fridgenerate-app.herokuapp.com/similar_recipes/';
+        const url = 'https://fridgenerate-app.herokuapp.com/similar_recipes/';
     
         axios.post(url, {
             'data': {
@@ -33,7 +33,7 @@ const SimilarRecipes = ( {currentRecipe, setCurrentRecipe} ) => {
                         const handleClick = (e) => {
                             e.preventDefault();
 
-                            const url = "http://fridgenerate-app.herokuapp.com/recipe_details/";
+                            const url = "https://fridgenerate-app.herokuapp.com/recipe_details/";
 
                             axios.post(url, {
                                 'data': {
