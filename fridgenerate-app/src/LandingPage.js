@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import TopNav from './TopNav';
 import RandomRecipes from './RandomRecipes';
 import IngredientsSearch from './IngredientsSearch';
 import axios from 'axios';
