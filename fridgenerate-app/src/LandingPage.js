@@ -8,7 +8,7 @@ const Landing = () => {
   const [recipeList, setRecipeList] = useState([])
   
   const randomClick = () => {
-    const url = `http://localhost:8000/random_recipes/`;
+    const url = `http://fridgenerate-app.herokuapp.com/random_recipes/`;
 
     axios.get(url)
     .then((response) => {

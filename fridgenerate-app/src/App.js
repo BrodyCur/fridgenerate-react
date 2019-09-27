@@ -19,7 +19,7 @@ class App extends Component {
 
   componentDidMount() {
     if (this.state.logged_in) {
-      fetch('http://localhost:8000/current/user/', {
+      fetch('http://fridgenerate-app.herokuapp.com/current/user/', {
         headers: {
           Authorization: `JWT ${localStorage.getItem('token')}`
         }
@@ -33,7 +33,7 @@ class App extends Component {
 
   handle_login = (e, data) => {
     e.preventDefault();
-    fetch('http://localhost:8000/api/token/', {
+    fetch('http://fridgenerate-app.herokuapp.com/api/token/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -58,7 +58,7 @@ class App extends Component {
 
   handle_signup = (e, data) => {
     e.preventDefault();
-    fetch('http://localhost:8000/users/', {
+    fetch('http://fridgenerate-app.herokuapp.com/users/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
